@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mani Vidyadhar | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <div class="hero-content">
+      <h1>Mani Vidyadhar</h1>
+      <p>Linux | SQL | Python | Java</p>
+      <a class="scroll-down" href="#about">↓ Explore ↓</a>
+    </div>
+    <!-- Add your photo here -->
+    <img src="images/profile.jpg" alt="Mani Vidyadhar">
+  </div>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am an aspiring cybersecurity student with strong knowledge of Linux, SQL, Python, and basic Java.
+      My focus is to learn penetration testing (VAPT), ethical hacking, and red team security operations.
+    </p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li><strong>Programming:</strong> Python, Java (basic)</li>
+      <li><strong>Databases:</strong> SQL</li>
+      <li><strong>Operating Systems:</strong> Linux</li>
+      <li><strong>Cybersecurity:</strong> VAPT, Red Team Interest</li>
+      <li><strong>Other:</strong> Git, Networking Basics, Linux</li>
+    </ul>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Automated ECG classification using deep learning (Python)</h3>
+      <p>Developed an automated ECG classification system using deep learning to assist in early and accurate detection of heart abnormalities.</p>
+      <p><a href="https://github.com/YOURUSERNAME/password-checker" target="_blank">View on GitHub</a></p>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education">
+    <h2>Education</h2>
+    <ul>
+      <li><strong>MCA</strong> - SRK Institute of Technology</li>
+      <li><strong>Certifications:</strong> Linux Essentials, Python Basics, Future: CEH / Security+</li>
+    </ul>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contact-form">
+      <input type="text" name="from_name" placeholder="Your Name" required>
+      <input type="email" name="reply_to" placeholder="Your Email" required>
+      <input type="text" name="contact_title" placeholder="Title (e.g. Job Opportunity, Project)" required>
+      <textarea name="message" rows="5" placeholder="Reason for Contacting" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p id="form-status"></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Mani Vidyadhar | Portfolio</p>
+  </footer>
+
+  <!-- EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script>
+    (function() {
+      emailjs.init("Gax-au7dT5NzaK4Ul"); // Replace with your Public Key
+    })();
+
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      emailjs.sendForm("service_2byikw6", "template_awlhhkc", this)
+        .then(function() {
+          document.getElementById("form-status").innerText = "✅ Message Sent Successfully!";
+          document.getElementById("form-status").style.color = "lime";
+        }, function(error) {
+          document.getElementById("form-status").innerText = "❌ Failed to send. Error: " + JSON.stringify(error);
+          document.getElementById("form-status").style.color = "red";
+        });
+    });
+  </script>
+</body>
+</html>
