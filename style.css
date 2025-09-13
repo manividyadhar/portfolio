@@ -75,7 +75,7 @@ section {
 
 .hero img {
   flex: 1;
-  max-width: 40%;
+  max-width: 50%;
   height: auto;
   border-radius: 10px;
   border: none;
@@ -188,7 +188,6 @@ footer {
     flex-direction: column;
     text-align: center;
     padding: 40px 5%;
-    height: auto;
   }
 
   .hero-content {
@@ -197,9 +196,7 @@ footer {
   }
 
   .hero img {
-    max-width: 70%;
-    margin: 0 auto;
-    display: block;
+    max-width: 80%;
     margin-top: 20px;
   }
 
@@ -211,15 +208,7 @@ footer {
 
   .social-links a {
     margin: 8px 0;
-    width: 80%;
+    width: 70%;
     text-align: center;
-  }
-
-  h1 {
-    font-size: 2em;
-  }
-
-  p {
-    font-size: 1.2em;
   }
 }
