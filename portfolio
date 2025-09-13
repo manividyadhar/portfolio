@@ -82,7 +82,7 @@
 
     .hero img {
       flex: 1;
-      max-width: 40%;
+      max-width: 50%;
       height: auto;
       border-radius: 10px;
       border: none;
@@ -195,7 +195,6 @@
         flex-direction: column;
         text-align: center;
         padding: 40px 5%;
-        height: auto;
       }
 
       .hero-content {
@@ -204,9 +203,7 @@
       }
 
       .hero img {
-        max-width: 70%;
-        margin: 0 auto;
-        display: block;
+        max-width: 80%;
         margin-top: 20px;
       }
 
@@ -218,16 +215,8 @@
 
       .social-links a {
         margin: 8px 0;
-        width: 80%;
+        width: 70%;
         text-align: center;
-      }
-
-      h1 {
-        font-size: 2em;
-      }
-
-      p {
-        font-size: 1.2em;
       }
     }
   </style>
@@ -257,7 +246,8 @@
 
       <a class="scroll-down" href="#about">↓ Explore ↓</a>
     </div>
-    <img src="images/profile.jpg.png" alt="Mani Vidyadhar">
+    <!-- Add your photo here -->
+    <img src="M:\portfolio\images\profile.jpg.png" alt="Mani Vidyadhar">
   </div>
 
   <!-- About Section -->
@@ -328,13 +318,10 @@
     document.getElementById('contact-form').addEventListener('submit', function(event) {
       event.preventDefault();
 
-      emailjs.sendForm("service_2byikw6", "template_awlhhkc", this)
+      emailjs.sendForm("service_2byikw6", "template_4zy8abl", this)
         .then(function() {
           document.getElementById("form-status").innerText = "✅ Message Sent Successfully!";
           document.getElementById("form-status").style.color = "lime";
-
-          // ✅ Reset form fields after success
-          document.getElementById('contact-form').reset();
         }, function(error) {
           document.getElementById("form-status").innerText = "❌ Failed to send. Error: " + JSON.stringify(error);
           document.getElementById("form-status").style.color = "red";
