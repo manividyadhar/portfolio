@@ -1,3 +1,4 @@
+/* General Styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -75,11 +76,9 @@ section {
 
 .hero img {
   flex: 1;
-  max-width: 50%;
+  max-width: 40%;
   height: auto;
   border-radius: 10px;
-  border: none;
-  box-shadow: none;
   object-fit: cover;
 }
 
@@ -116,6 +115,7 @@ section {
   box-shadow: 0 0 8px rgba(0,180,160,0.6);
 }
 
+/* Scroll Button */
 .scroll-down {
   margin-top: 25px;
   font-size: 1.2em;
@@ -182,12 +182,13 @@ footer {
   margin-top: 30px;
 }
 
-/* ✅ Responsive Design for Mobile */
+/* ✅ Responsive Design Fix for Mobile */
 @media screen and (max-width: 768px) {
   .hero {
     flex-direction: column;
     text-align: center;
     padding: 40px 5%;
+    height: auto;   /* ✅ Fixed: prevent overlap */
   }
 
   .hero-content {
@@ -196,7 +197,9 @@ footer {
   }
 
   .hero img {
-    max-width: 80%;
+    max-width: 70%;  /* ✅ Fixed: smaller on mobile */
+    margin: 0 auto;
+    display: block;
     margin-top: 20px;
   }
 
@@ -208,7 +211,15 @@ footer {
 
   .social-links a {
     margin: 8px 0;
-    width: 70%;
+    width: 80%;
     text-align: center;
+  }
+
+  h1 {
+    font-size: 2em;  /* ✅ Fixed: smaller heading on mobile */
+  }
+
+  p {
+    font-size: 1.2em; /* ✅ Fixed: smaller text */
   }
 }
