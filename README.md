@@ -33,7 +33,7 @@ Here’s what the portfolio looks like:
 ---
 
 ## 🔗 Live Demo
-👉 [View Portfolio](https://yourusername.github.io/portfolio)  
+👉 [View Portfolio](https://manividyahar.github.io/portfolio)  
 
 *(Replace `yourusername` with your GitHub username once deployed)*
 
