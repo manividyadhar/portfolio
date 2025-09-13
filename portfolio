@@ -322,6 +322,7 @@
         .then(function() {
           document.getElementById("form-status").innerText = "✅ Message Sent Successfully!";
           document.getElementById("form-status").style.color = "lime";
+          document.getElementById("contact-form").reset(); // ✅ Clear form after sending
         }, function(error) {
           document.getElementById("form-status").innerText = "❌ Failed to send. Error: " + JSON.stringify(error);
           document.getElementById("form-status").style.color = "red";
