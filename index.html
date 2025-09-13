@@ -106,8 +106,11 @@
         .then(function() {
           document.getElementById("form-status").innerText = "✅ Message Sent Successfully!";
           document.getElementById("form-status").style.color = "lime";
+
+          // ✅ Clear form fields automatically
           document.getElementById('contact-form').reset();
 
+          // ✅ Optional: clear success message after 5 seconds
           setTimeout(() => {
             document.getElementById("form-status").innerText = "";
           }, 5000);
