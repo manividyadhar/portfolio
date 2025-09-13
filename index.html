@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mani Vidyadhar | Portfolio</title>
+  <!-- Link external CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -21,6 +22,14 @@
     <div class="hero-content">
       <h1>Mani Vidyadhar</h1>
       <p>Linux | SQL | Python | Java</p>
+
+      <!-- Social Links -->
+      <div class="social-links">
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=manividyadhar@gmail.com" target="_blank">📧 Email</a>
+        <a href="https://www.linkedin.com/in/mani-vidyadhar-949b63233" target="_blank">🔗 LinkedIn</a>
+        <a href="https://github.com/manividyadhar" target="_blank">💻 GitHub</a>
+      </div>
+
       <a class="scroll-down" href="#about">↓ Explore ↓</a>
     </div>
     <!-- Add your photo here -->
@@ -54,7 +63,7 @@
     <div class="project">
       <h3>Automated ECG classification using deep learning (Python)</h3>
       <p>Developed an automated ECG classification system using deep learning to assist in early and accurate detection of heart abnormalities.</p>
-      <p><a href="https://github.com/manividyadhar/project.git" target="_blank"">View on GitHub</a></p>
+      <p><a href="https://github.com/manividyadhar/password-checker" target="_blank">View on GitHub</a></p>
     </div>
   </section>
 
@@ -95,7 +104,7 @@
     document.getElementById('contact-form').addEventListener('submit', function(event) {
       event.preventDefault();
 
-      emailjs.sendForm("service_2byikw6", "template_awlhhkc", this)
+      emailjs.sendForm("service_2byikw6", "template_4zy8abl", this)
         .then(function() {
           document.getElementById("form-status").innerText = "✅ Message Sent Successfully!";
           document.getElementById("form-status").style.color = "lime";
