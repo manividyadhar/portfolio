@@ -82,7 +82,7 @@
 
     .hero img {
       flex: 1;
-      max-width: 50%;
+      max-width: 40%;
       height: auto;
       border-radius: 10px;
       border: none;
@@ -195,6 +195,7 @@
         flex-direction: column;
         text-align: center;
         padding: 40px 5%;
+        height: auto;
       }
 
       .hero-content {
@@ -203,7 +204,9 @@
       }
 
       .hero img {
-        max-width: 80%;
+        max-width: 70%;
+        margin: 0 auto;
+        display: block;
         margin-top: 20px;
       }
 
@@ -215,8 +218,16 @@
 
       .social-links a {
         margin: 8px 0;
-        width: 70%;
+        width: 80%;
         text-align: center;
+      }
+
+      h1 {
+        font-size: 2em;
+      }
+
+      p {
+        font-size: 1.2em;
       }
     }
   </style>
@@ -246,8 +257,8 @@
 
       <a class="scroll-down" href="#about">↓ Explore ↓</a>
     </div>
-    <!-- Add your photo here -->
-    <img src="M:\portfolio\images\profile.jpg.png" alt="Mani Vidyadhar">
+    <!-- ✅ Use relative path for GitHub Pages -->
+    <img src="images/profile.png" alt="Mani Vidyadhar">
   </div>
 
   <!-- About Section -->
