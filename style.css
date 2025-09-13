@@ -41,4 +41,185 @@ section {
   justify-content: center;
   padding: 15px;
   z-index: 1000;
-  box-shadow: 0 2px 5px rgba(
+  box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+.navbar a {
+  margin: 0 15px;
+  font-weight: bold;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #00b4a0;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background: linear-gradient(135deg, #0a2342, #00b4a0);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 10%;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-content {
+  flex: 1;
+  max-width: 50%;
+}
+
+.hero img {
+  flex: 1;
+  max-width: 40%;
+  height: auto;
+  border-radius: 10px;
+  border: none;
+  box-shadow: none;
+  object-fit: cover;
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.hero p {
+  font-size: 1.5em;
+  color: #00b4a0;
+}
+
+/* Social Links */
+.social-links {
+  margin: 20px 0;
+}
+
+.social-links a {
+  margin-right: 15px;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #00b4a0;
+  border: 2px solid #00b4a0;
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  background: #00b4a0;
+  color: #000;
+  box-shadow: 0 0 8px rgba(0,180,160,0.6);
+}
+
+.scroll-down {
+  margin-top: 25px;
+  font-size: 1.2em;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  border: 2px solid #00b4a0;
+  padding: 10px 25px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  background: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+}
+
+.scroll-down:hover {
+  background: #00b4a0;
+  color: #000;
+  box-shadow: 0 0 10px rgba(0,180,160,0.5);
+}
+
+/* Contact Form */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input, form textarea {
+  margin: 10px 0;
+  padding: 12px;
+  font-size: 1em;
+  border-radius: 5px;
+  border: 1px solid #00b4a0;
+  background: #0a2342;
+  color: #fff;
+}
+
+form button {
+  padding: 12px;
+  font-size: 1em;
+  background: #00b4a0;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+form button:hover {
+  background: #007a6a;
+  color: #fff;
+}
+
+#form-status {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #0a2342;
+  color: #ccc;
+  margin-top: 30px;
+}
+
+/* ✅ Responsive Design for Mobile */
+@media screen and (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 5%;
+    height: auto;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .hero img {
+    max-width: 70%;
+    margin: 0 auto;
+    display: block;
+    margin-top: 20px;
+  }
+
+  .social-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .social-links a {
+    margin: 8px 0;
+    width: 80%;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  p {
+    font-size: 1.2em;
+  }
+}
