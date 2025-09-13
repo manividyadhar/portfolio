@@ -26,7 +26,7 @@ The portfolio is built using **HTML, CSS, and EmailJS** for the contact form.
 ## 📸 Preview
 Here’s what the portfolio looks like:
 
-![Portfolio Screenshot](images/Screenshot 2025-09-13 101510.png)
+![Portfolio Screenshot](preview.png)
 
 *(Take a screenshot of your site and save it as `preview.png` inside an `images/` folder in the repo)*
 
