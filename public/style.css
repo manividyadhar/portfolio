@@ -1,0 +1,124 @@
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  background: radial-gradient(circle at top, #020b10, #000814);
+  color: #dbeafe;
+}
+
+h2 {
+  color: #00f5d4;
+  border-left: 5px solid #00f5d4;
+  padding-left: 12px;
+}
+
+a {
+  color: #00f5d4;
+  text-decoration: none;
+}
+
+section {
+  max-width: 900px;
+  margin: 90px auto;
+  padding: 45px;
+  background: rgba(2, 15, 30, 0.95);
+  border-radius: 14px;
+  border: 1px solid rgba(0, 245, 212, 0.15);
+}
+
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 10, 20, 0.95);
+  display: flex;
+  justify-content: center;
+  padding: 16px;
+  z-index: 1000;
+}
+
+.navbar a {
+  margin: 0 18px;
+  font-weight: 600;
+  color: #e5faff;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 70px 10%;
+}
+
+.hero-content {
+  max-width: 55%;
+}
+
+.hero img {
+  max-width: 320px;
+  border-radius: 14px;
+  border: 2px solid #00f5d4;
+}
+
+/* SOCIAL */
+.social-links a {
+  display: inline-block;
+  margin-right: 15px;
+  padding: 8px 16px;
+  border: 2px solid #00f5d4;
+  border-radius: 10px;
+}
+
+/* CONTACT */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input,
+form textarea {
+  margin: 12px 0;
+  padding: 14px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 245, 212, 0.5);
+  background: #020b10;
+  color: #ffffff;
+}
+
+form button {
+  margin-top: 15px;
+  padding: 14px;
+  background: #00f5d4;
+  color: #000;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 25px;
+  background: #000814;
+  color: #9fbecb;
+}
+
+/* MOBILE */
+@media screen and (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero img {
+    margin-top: 25px;
+  }
+}
