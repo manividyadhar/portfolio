@@ -45,23 +45,50 @@ section {
   color: #e5faff;
 }
 
-/* HERO */
+/* ===== HERO SECTION ===== */
 .hero {
-  height: 100vh;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #020b10, #001d3d);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 70px 10%;
+  gap: 50px;
 }
 
 .hero-content {
-  max-width: 55%;
+  flex: 1;
 }
 
-.hero img {
-  max-width: 320px;
-  border-radius: 14px;
+.hero-content h1 {
+  font-size: 3.2em;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 1.5em;
+  color: #00f5d4;
+  font-weight: 500;
+}
+
+/* ✅ IMAGE CONTAINER */
+.hero-image {
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ✅ IMAGE ITSELF (THIS FIXES RENDER ISSUE) */
+.hero-image img {
+  width: 320px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px;
   border: 2px solid #00f5d4;
+  box-shadow: 0 0 35px rgba(0, 245, 212, 0.45);
+  display: block;
 }
 
 /* SOCIAL */
